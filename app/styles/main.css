@@ -1,0 +1,25 @@
+/* Will be compiled down to a single stylesheet with your sass files */
+
+.country-flag-white {
+    box-shadow: white 0 0 2px;
+    margin-top: -1px;
+}
+.country-flag-black {
+    box-shadow: black 0 0 2px;
+    margin-top: -1px;
+}
+
+.nopadding {
+    padding: 0 16px 0 0 !important;
+}
+
+.nopadding > input {
+    border: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    margin: 0;
+    width: 100%;
+    padding: 8px;
+
+}

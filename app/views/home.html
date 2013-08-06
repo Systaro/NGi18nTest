@@ -1,0 +1,53 @@
+<div class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar-inner">
+        <div style="padding: 0 0 0 10px;">
+            <a class="brand" href="#">{{'navbar.title'|translate}}</a>
+
+            <!--left side-->
+            <ul class="nav pull-left">
+                <li class="active">
+                    <a href="/#/home">
+                        <strong>{{'navbar.links.home'|translate}}</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/format">
+                        <strong>{{'navbar.links.format'|translate}}</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">link</a>
+                </li>
+            </ul>
+
+            <!--right side-->
+            <ul class="nav pull-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="{{'language.label'|translate}}">
+                        <img class="country-flag-white" data-ng-src="{{'i18n/' + selectedLocale.code + '.png'}}"/>
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li data-ng-repeat="locale in locales">
+                            <a href="#" data-ng-click="setLocale(locale);">
+                                <img class="country-flag-black" data-ng-src="{{'i18n/' + locale.code + '.png'}}"/> {{locale.label}}
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="hero-unit" style="margin-top: 40px;" >
+    <h1>{{'pages.main.title'|translate}}</h1>
+    <p>{{'pages.main.info.a'|translate}}</p>
+    <!--<select data-ng-model="selectedlocale"-->
+            <!--data-ng-options="locale.label for locale in locales"-->
+            <!--data-ng-change="changelocale()">-->
+    <!--</select>-->
+
+    <p>{{'pages.main.info.b'|translate}} <strong>i18n</strong> {{'pages.main.info.c'|translate}}</p>
+    <h3>{{'pages.main.footer'|translate}}</h3>
+</div>
