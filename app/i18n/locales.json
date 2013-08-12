@@ -1,0 +1,5 @@
+[
+    {"code": "en-US", "flag": "i18n/flags/en-US.png", "name": "English (United States)"},
+    {"code": "de-DE", "flag": "i18n/flags/de-DE.png", "name": "Deutsch (Deutschland)"},
+    {"code": "fr-FR", "flag": "i18n/flags/fr-FR.png", "name": "Français (France)"}
+]

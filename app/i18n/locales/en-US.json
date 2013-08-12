@@ -1,0 +1,89 @@
+{
+    "date":{
+        "format": {
+            "fullDate": "EEEE, MMMM d,y",
+            "longDate": "MMMM d, y",
+            "medium": "MMM d, y h:mm:ss a",
+            "mediumDate": "MMM d, y",
+            "mediumTime": "h:mm:ss",
+            "short": "M/d/yy h:mm a",
+            "shortDate": "M/d/yy",
+            "shortTime": "h:mm a"
+        }
+    },
+    "number": {
+        "currency": {
+            "format": {
+                "unit": "$",
+                "precision": 2,
+                "format": "%u %n",
+                "delimiter": ",",
+                "separator": ".",
+                "name": "Dollar"
+            }
+        },
+        "format": {
+            "precision": 3,
+            "separator": ".",
+            "delimiter": ",",
+            "strip_insignificant_zeros": false
+        }
+    },
+    "messages": {
+        "browser":{
+            "outdated": {
+                "a": "You are using an outdated browser.",
+                "b": "Upgrade your browser today",
+                "c": "or",
+                "d": "install Google Chrome Frame",
+                "e": "to better experience this site.",
+                "urls": {
+                    "a": "http://browsehappy.com/",
+                    "b": "http://www.google.com/chromeframe/?redirect=true"
+                }
+            }
+        }
+    },
+    "language": {
+        "label": "English (United States)"
+    },
+    "modals": {
+    },
+    "navbar":{
+        "title": "Angular i18n Demo",
+        "links": {
+            "home": "Home",
+            "format": "Formatting"
+        }
+    },
+    "pages": {
+        "404": {
+
+        },
+        "index":{
+
+        },
+        "main": {
+            "title": "'Allo, 'Allo!",
+            "info":{
+                "a": "This is a multilanguage app.",
+                "b": "You have now",
+                "c": "installed."
+            },
+            "footer": "Have fun! - Yeoman"
+        },
+        "format": {
+            "title": "Date and Number formatting",
+            "table":{
+                "number": "Number",
+                "currency": "Currency",
+                "date": "Date",
+                "type": "Type",
+                "result": "Result",
+                "value": "Value",
+                "format": "Format",
+                "custom": "Custom format"
+            }
+        }
+    }
+}

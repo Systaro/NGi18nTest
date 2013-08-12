@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body data-ng-controller="I18nCtrl">
+  <body ng-app="NGi18nTestApp" ng-controller="I18nCtrl">
     <!--[if lt IE 7]>
       <p class="chromeframe">{{'messages.browser.outdated.a'|translate}} <a data-ng-href="{{'messages.browser.outdated.urls.a'|translate}}" target="_blank">{{'messages.browser.outdated.b'|translate}}</a> {{'messages.browser.outdated.c'|translate}} <a data-ng-href="{{'messages.browser.outdated.urls.b'|translate}}" target="_blank">{{'messages.browser.outdated.d'|translate}}</a> {{'messages.browser.outdated.e'|translate}}</p>
     <![endif]-->
@@ -33,52 +33,58 @@
     <script src="components/jquery/jquery.js"></script>
     <script src="components/bootstrap/js/bootstrap-dropdown.js"></script>
     <script src="components/bootstrap/js/bootstrap-modal.js"></script>
+
     <script src="components/angular-unstable/angular.js"></script>
     <script src="components/angular-resource/angular-resource.js"></script>
     <script src="components/angular-cookies/angular-cookies.js"></script>
     <script src="components/angular-sanitize/angular-sanitize.js"></script>
+
     <script src="components/lodash/lodash.js"></script>
-    <script src="scripts/i18n-3.0.0.rc3.js"></script>
-    <script src="components/angularjs-i18n/scripts/I18nAdapter.js"></script>
-    <script src="components/angularjs-i18n/scripts/I18nAngular.js"></script>
+
+    <script src="components/angular-translate/angular-translate.js"></script>
+    <script src="components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+
+    <!--<script src="scripts/i18n-3.0.0.rc3.js"></script>-->
+    <!--<script src="components/angularjs-i18n/scripts/I18nAdapter.js"></script>-->
+    <!--<script src="components/angularjs-i18n/scripts/I18nAngular.js"></script>-->
 
     <!-- build:js scripts/scripts.js -->
     <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/main.js"></script>
+    <!--<script src="scripts/controllers/main.js"></script>-->
     <script src="scripts/controllers/i18nController.js"></script>
     <!-- endbuild -->
 
-    <script>
-        'use strict';
+    <!--<script>-->
+        <!--'use strict';-->
 
-        function initAngular() {
-            angular.element(document).ready(function() {
-                angular.bootstrap(document, ['NGi18nTestApp']);
-            });
-        }
+        <!--function initAngular() {-->
+            <!--angular.element(document).ready(function() {-->
+                <!--angular.bootstrap(document, ['NGi18nTestApp']);-->
+            <!--});-->
+        <!--}-->
 
-        function initI18n() {
-            var language = (localStorage.getItem("i18nLanguage") || window.navigator.userLanguage || window.navigator.language);
+        <!--function initI18n() {-->
+            <!--var language = (localStorage.getItem("i18nLanguage") || window.navigator.userLanguage || window.navigator.language);-->
 
-            if (language.length == 2) {
-                language = language + '-' + language.toUpperCase();
-            }
+            <!--if (language.length == 2) {-->
+                <!--language = language + '-' + language.toUpperCase();-->
+            <!--}-->
 
-            var i18n = new I18nAdapter(['en-US', 'de-DE'], 'en-US');
-            i18n.setLocale(language, ['i18n/' + language + '.json'])
-                    .then(initAngular);
-            window.i18nAdapter = i18n;
-        }
+            <!--var i18n = new I18nAdapter(['en-US', 'de-DE'], 'en-US');-->
+            <!--i18n.setLocale(language, ['i18n/' + language + '.json'])-->
+                    <!--.then(initAngular);-->
+            <!--window.i18nAdapter = i18n;-->
+        <!--}-->
 
-        initI18n();
-    </script>
+        <!--initI18n();-->
+    <!--</script>-->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
+    <!--<script>-->
+      <!--var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];-->
+      <!--(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];-->
+      <!--g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';-->
+      <!--s.parentNode.insertBefore(g,s)}(document,'script'));-->
+    <!--</script>-->
   </body>
 </html>
